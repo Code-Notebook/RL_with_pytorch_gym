@@ -60,7 +60,7 @@ class Critic(nn.Module):
 
 
 class DDPG(object):
-    def __init__(self, state_dim, action_dim, action_bound, replacement, memory_capacity=1000, gamma=0.9, lr_a=0.001,
+    def __init__(self, state_dim, action_dim, action_bound, replacement, memory_capacity=1000, gamma=0.95, lr_a=0.001,
                  lr_c=0.002, batch_size=32):
         super(DDPG, self).__init__()
         self.state_dim = state_dim

@@ -23,7 +23,7 @@ if __name__ == "__main__":
         dict(name="hard", rep_ter=600)
     ][0]
     ENV_NAME = "Pendulum-v1"
-    RENDER = False
+    RENDER = True
 
     # train
     env = gym.make(ENV_NAME)
