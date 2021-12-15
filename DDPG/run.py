@@ -15,8 +15,8 @@ from DDPG import DDPG
 if __name__ == "__main__":
     # hyper parameters
     VAR = 3
-    MAX_EPISODES = 200
-    MAX_EP_STEP = 200
+    MAX_EPISODES = 2000
+    MAX_EP_STEP = 600
     MEMORY_CAPACITY = 10000
     REPLACEMENT = [
         dict(name="soft", tau=0.01),

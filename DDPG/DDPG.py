@@ -20,7 +20,7 @@ torch.set_default_dtype(torch.float)
 class Actor(nn.Module):
     def __init__(self, state_dim, action_dim, action_bound):
         super(Actor, self).__init__()
-        self.action_bound = action_bound
+        self.action_bound = torch.Tensor(action_bound)
         # layer
         self.layer_1 = nn.Linear(state_dim, 30)
         nn.init.normal_(self.layer_1.weight, 0., 0.3)
